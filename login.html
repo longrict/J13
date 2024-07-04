@@ -26,16 +26,18 @@
         <div class="right">
             <div id="pad"></div>
             <h1>Website</h1>
-            <div class="textb col">
-                <label for="username">Enter your username or email</label>
-                <input class="textin" id="username">
-            </div>
-            <div class="textb col">
-                <label for="password">Password</label>
-                <input class="textin" id="password">
-                <label id="forgot" for="password"><a href="#">Forgot password?</a></label>
-            </div>
-            <button id="signin">Sign in</button>
+            <form action="" method="post" id="login">
+                <div class="textb col">
+                    <label for="username">Enter your username or email</label>
+                    <input class="textin" id="username" type="text" name="username" required>
+                </div>
+                <div class="textb col">
+                    <label for="password">Password</label>
+                    <input class="textin" id="password" type="text" name="password" required>
+                    <label id="forgot" for="password"><a href="#">Forgot password?</a></label>
+                </div>
+                <button id="signin" type="submit">Sign in</button>
+            </form>
             <p>Are you new? <a href="#">Create an account</a></p>
         </div>
     </div>
